@@ -2,6 +2,7 @@
 Handy wrapper utility functions for Flask with SQLAlchemy.
 
 # Usage Example
+## All together
 ```python
 from utils import jsonify_response, RouteError, paginate
 
@@ -17,4 +18,12 @@ def get_some_list(pid):
     pagination = SomeModel.paginate(page, 10, False)
     data = [your_row.some_method() for your_row in pagination.items]
     return pagination, data
+```
+
+## jsonify_response
+```python
+@some_router.route('URL')
+@jsonify_response
+def some_url_method(pid):
+    return data, 200  # data and HTML status code
 ```
