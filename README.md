@@ -1,5 +1,5 @@
 # flask-wrapper-utilities
-Handy wrapper utilities functions for Flask with SQLAlchemy.
+Handy wrapper utility functions for Flask with SQLAlchemy.
 
 # Usage Example
 ```python
